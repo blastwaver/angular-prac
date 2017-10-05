@@ -2,7 +2,7 @@ import { SummaryPipe } from './summary.pip';
 import { CoursesService } from './courses/courses.service';
 import { AuthorsService } from './authors/authors.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -14,6 +14,7 @@ import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ContactFormsdComponent } from './contact-formsd/contact-formsd.component';
+import { SignupFormComponent } from './signup-form/signup-form.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +27,14 @@ import { ContactFormsdComponent } from './contact-formsd/contact-formsd.componen
     PanelComponent,
     LikeComponent,
     ContactFormComponent,
-    ContactFormsdComponent
+    ContactFormsdComponent,
+    SignupFormComponent,
+   
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     AuthorsService,

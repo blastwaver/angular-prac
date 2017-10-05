@@ -4,3 +4,7 @@
 body {
     margin: 10% 20% 0 20%;
 }
+
+.form-control.ng-touched.ng-invalid {
+    border:2px solid red;
+}
